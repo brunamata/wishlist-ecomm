@@ -19,7 +19,7 @@ public interface WishlistResource {
     @ResponseStatus(HttpStatus.OK)
     WishlistItemResponse getWishlistItem(@PathVariable String userId, @PathVariable String itemId);
 
-    @PostMapping("/{userId}")
+    @PostMapping("/{userId}/items")
     @ResponseStatus(HttpStatus.CREATED)
     WishlistResponse addItemToWishlist(@PathVariable String userId, @RequestBody Item request);
 
