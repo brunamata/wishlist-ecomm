@@ -27,9 +27,6 @@ import static org.hamcrest.Matchers.*;
 @ActiveProfiles("test")
 @SpringBootTest
 @AutoConfigureMockMvc
-@SpringBootTest
-@CucumberContextConfiguration
-@ActiveProfiles("test")
 public class WishlistStepDefinitions extends MongoDBContainerInitializer {
 
     @Autowired
